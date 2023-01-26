@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alih2k.github.io/WeatherApp",
+  "homepage": "http://alih2k.github.io/WeatherApp",
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -b main -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
