@@ -121,9 +121,13 @@ body {
     }
 }
 
-@media (max-height:750px) {
+@media (max-height:820px) {
     #first {
         overflow: auto
+    }
+
+    .resultSection {
+        height: auto;
     }
 }
 
