@@ -3,7 +3,7 @@ function Results(props) {
     <>
         <div id="results" className='results hidden'>
             <div className='resultSection'>
-                <div className="flex top">
+                <div className="flex">
                     <div className='temp'>
                         <h1>Temp</h1>
                         <img src="https://img.icons8.com/external-kosonicon-solid-kosonicon/96/null/external-high-temperatures-temperature-kosonicon-solid-kosonicon.png" alt='-' />
@@ -19,8 +19,6 @@ function Results(props) {
                         <img src="https://img.icons8.com/external-kosonicon-outline-kosonicon/64/null/external-temperatures-temperature-kosonicon-outline-kosonicon.png" alt='-' />    
                         <h2>{props.feelsLike} °C</h2>
                     </div>
-                </div>
-                <div className="flex">
                     <div className="humidity">
                         <h1>Humidity</h1>
                         <img src="https://img.icons8.com/ios-glyphs/60/null/humidity.png" alt="-" />
