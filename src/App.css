@@ -66,13 +66,14 @@ body {
     justify-items: center;
     text-align: center;
     transition: all .4s 0s ease-in;
-    height: 100%
+    height: auto;
 }
 
 .resultSection {
     width: 60vw;
     height: 100%;
-    border-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     background-color: rgb(255,255,255,.7);
     padding: 2%0;
     margin-top: 2%
@@ -124,10 +125,6 @@ body {
 @media (max-height:820px) {
     #first {
         overflow: auto
-    }
-
-    .resultSection {
-        height: auto;
     }
 }
 
