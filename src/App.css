@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Raleway",sans-serif
+    font-family: "Raleway",sans-serif;
 }
 
 #first {
@@ -10,18 +10,18 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .title {
     margin: 0;
     color: #fff;
-    padding: 5%0 0 5%
+    padding: 5%0 0 5%;
 }
 
 .search,.searchField input {
     font-size: 1.1rem;
-    text-align: center
+    text-align: center;
 }
 
 .search {
@@ -31,7 +31,7 @@ body {
     justify-items: center;
     align-items: center;
     top: 10%;
-    transition: all .4s 0s ease-in
+    transition: all .4s 0s ease-in;
 }
 
 .searchField input {
@@ -43,21 +43,38 @@ body {
     border-style: hidden;
     border-radius: 50px;
     box-shadow: 0 0 19px rgba(66,66,66,.43);
-    transition: all .1s 0s ease-in
+    transition: all .1s 0s ease-in;
 }
 
 .searchField input:focus {
     outline: 0;
-    transform: scale(1.03)
+    transform: scale(1.03);
 }
 
+.x {
+    font-weight: bold;
+    margin-left: 3%;
+    color: rgba(238, 0, 0, 0.9);
+    text-shadow: 0 0 19px rgba(66,66,66,.43);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.hiddenX {
+    display: none;
+}
+
+
 .up {
-    transform: translateY(-20%)
+    transform: translateY(-20%);
+}
+
+.down {
+    transform: translateY(100%);
 }
 
 .hidden {
-    visibility: hidden;
-    transform: translateY(100%)
+    display: none;
 }
 
 .results {
@@ -66,7 +83,7 @@ body {
     justify-items: center;
     text-align: center;
     transition: all .4s 0s ease-in;
-    height: 100%;
+    height: auto;
 }
 
 .resultSection {
@@ -75,74 +92,79 @@ body {
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     background-color: rgb(255,255,255,.7);
-    padding: 2%0;
-    margin-top: 2%
+    padding: 1% 0;
+    transition: all .4s 0s ease-in;
+    margin-bottom: 5%;
 }
 
 .flex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .resultSection img {
-    width: 20%
+    width: 20%;
 }
 
 .flex>div {
     font-size: .8rem;
-    width: 30%
+    width: 30%;
 }
 
 .hiddenErr {
-    visibility: hidden
+    visibility: hidden;
 }
 
 #error {
-    color: red
+    color: rgba(238, 0, 0, 0.9);
+}
+
+.resultSection>h2 {
+    color: rgba(66,66,66,.7);
 }
 
 @media (max-width:940px) {
     .flex>div {
-        width: 40%
+        width: 40%;
     }
 
     .resultSection {
-        width: 70vw
+        width: 70vw;
     }
 }
 
 @media (max-width:640px) {
     .flex>div {
-        width: 80%
+        width: 80%;
     }
 
     #first {
-        overflow: auto
+        overflow: auto;
     }
 }
 
-@media (max-height:820px) {
+@media (max-height:880px) {
     #first {
-        overflow: auto
+        overflow: auto;
     }
 }
 
 
 @media (max-height:460px) and (min-width:1000px) {
-    .resultSection {
-        margin-top: 5%
+    .results {
+        margin-top: 5%;
     }
 }
 
 @media (max-height:610px) and (max-width:1000px) {
-    .resultSection {
-        margin-top: 10%
+    .results {
+        margin-top: 10%;
     }
 }
 
 @media (max-height:500px) and (max-width:500px) {
-    .resultSection {
-        margin-top: 20%
+    .results {
+        margin-top: 20%;
     }
 }

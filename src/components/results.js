@@ -1,8 +1,9 @@
 function Results(props) {
     return (
     <>
-        <div id="results" className='results hidden'>
-            <div className='resultSection'>
+        <div id="results" className='results hidden down'>
+            <div className='resultSection hidden down'>
+                <h2>{props.city} . {props.country}</h2>
                 <div className="flex">
                     <div className='temp'>
                         <h1>Temp</h1>
