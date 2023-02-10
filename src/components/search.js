@@ -43,8 +43,7 @@ function Search() {
             document.querySelector('.x').classList.remove('hiddenX');
         }
         
-        
-    }
+    } 
 
     function Weather(e) {
     
@@ -52,9 +51,9 @@ function Search() {
                 const cityName = e.target.value.toLowerCase();
                 const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=2ac304fdce0e28d3698608e255f89049`
                 Api(url);
+            }
         }
-    }
-
+            
     function remove () {
         document.querySelector('#search').classList.remove('up')
         document.querySelector('.x').classList.add('hiddenX');
